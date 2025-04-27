@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="24dp"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <!-- Welcome Text centered at the top -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, I'm Roopsee Banga!\nRoll No: 22001311043\n\nWelcome to my App on\nGridLayout and Implicit Intents!"
+        android:textSize="24sp"
+        android:textColor="#1A237E"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@drawable/welcome_background"
+        android:elevation="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <!-- View App Button below the Welcome Text -->
+    <Button
+        android:id="@+id/btnViewApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚀 View My App"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="12dp"/>
+
+    <!-- GridLayout with buttons centered below the View App button -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:layout_below="@id/btnViewApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <!-- Pastel Blue Button -->
+        <Button
+            android:id="@+id/btnWebsite"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:text="🌐 Website"
+            android:backgroundTint="#B3E5FC"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:elevation="6dp"
+            android:layout_gravity="center"/>
+
+        <!-- Pastel Green Button -->
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:text="📞 Call"
+            android:backgroundTint="#C8E6C9"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:elevation="6dp"
+            android:layout_gravity="center"/>
+
+        <!-- Pastel Orange Button -->
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:text="🗺️ Map"
+            android:backgroundTint="#FFE0B2"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:elevation="6dp"
+            android:layout_gravity="center"/>
+
+        <!-- Pastel Yellow Button -->
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:text="🔗 Share"
+            android:backgroundTint="#FFF9C4"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:elevation="6dp"
+            android:layout_gravity="center"/>
+
+    </GridLayout>
+
+</RelativeLayout>
